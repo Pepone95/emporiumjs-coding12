@@ -15866,4 +15866,8 @@ readers do not read off random characters that represent icons */
   border-radius: 15px;
 }
 
+.borderRR {
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
