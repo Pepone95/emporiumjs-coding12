@@ -11,14 +11,20 @@
 <body>
 
   <div class="imgnav">
-    <div><img src="./public/img/logo.png" alt=""></div>
+    <div"><img src="./public/img/logo.png" alt="">
+  </div>
   </div>
 
   <!-- debut NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav align-items-center ">
-        <a class="nav-item nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      <div class="navbar-nav align-items-center">
+        <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="#">PRODUCT</a>
         <a class="nav-item nav-link" href="#">BLOG</a>
         <a class="nav-item nav-link" href="#">ELEMENTS</a>
@@ -33,15 +39,21 @@
   <!-- FIN NAVBAR -->
 
   <!-- Debut slider -->
-  <div class="w-100 Sliderimg d-flex align-items-center">
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-5">
+  <div class="w-100 Sliderimg d-flex align-items-center mt-4">
+
+    <div class="container my-5 ">
+      <div class="row align-items-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
+
           <span class="text-danger display-4">Shop at</span>
-          <h1 class="display-1">emporium.</h1>
-          <p class="text-muted">A wonderful serenity has taken possession of my my entire soul, like these sweet morrnings of spring which l enjoy with my.</p>
+          <br>
+          <img class="col-lg-12 col-sm-12 " src="./public/img/logo.png" alt="">
+          <p class="text-muted">A wonderful serenity has taken possession of my my entire soul, like these sweet
+            morrnings of spring which l enjoy with my.</p>
+          <button class="bg-danger p-3 text-white rounded-pill border border-white"><span>SALE ITEMS</span></button>
         </div>
-        <div class="col-5">
+        <div class="col text-center">
           <img src="./public/img/slider-1.jpg" alt="" style="height: 550px">
         </div>
       </div>
@@ -49,8 +61,188 @@
   </div>
   <!-- Fin de Slider -->
 
+  <!-- 3 images  -->
+  <div class="my-5 mx-3">
+    <div class="card-deck ">
+
+      <div class="card image1 d-flex justify-content-center p-5 ">
+        <h3 class="text-center text-white display-4 tdc">Living room</h3>
+        <hr class="h75 bg-white">
+      </div>
+      <div class="card image2 d-flex justify-content-center p-5">
+        <h3 class="text-center text-white display-4 tdc">Sale Items</h3>
+        <hr class="h75 bg-white">
+      </div>
+
+      <div class="card image3 d-flex justify-content-center p-5">
+        <h3 class="text-center text-white display-4 tdc">Clothes</h3>
+        <hr class="h75 bg-white">
+      </div>
+    </div>
+  </div>
 
 
+  <!-- section produits recents -->
+  <section class="container">
+    <div>
+      <h4 class="text-center">Recent Products</h4>
+    </div>
+
+    <div class="row d-flex mt-4">
+      <div class="col-lg-4 col-sm-12 ">
+        <img src="./public/img/products_mini/product-luxry-sofa.jpg" width="100%" alt="">
+        <div class="text-center mt-3">
+          <h5>Luxury sofa</h5>
+          <span class="text-danger">$600.00</span>
+        </div>
+      </div>
+      <!-- 2eme images du la boutique recents -->
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-gloves.jpg" width="100%" alt="">
+
+        <div class="d-flex align-items-center justify-content-center mt-3 ">
+          <div class="col-3">
+            <h5 class="rounded-circle p-3 bg-danger text-white d-flex align-items-center justify-content-center">
+              SALE</h5>
+          </div>
+          <!-- SALE ROUNDEN CIRCLE -->
+          <div class="flex-column">
+            <h5 class="ml-3">Leather Gloves</h5>
+            <div class="text-center ">
+              <span class="text-muted overline">$34.00</span>
+              <span class="text-danger">$27.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center">
+        <img src="./public/img/products_mini/product-cups.jpg" width="100%" alt="">
+        <h5 class="mt-3">Colorful Bowl</h5>
+        <span class="text-danger">$18.00</span>
+      </div>
+    </div>
+    <!-- 2eme ligne de la boutique recents -->
+    <div class="row d-flex mt-5 text-center">
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-bag.jpg" width="100%" alt="">
+
+        <div class="d-flex align-items-center justify-content-center mt-3">
+
+          <div class="col-3">
+            <h5 class="rounded-circle p-3 bg-danger text-white d-flex align-items-center justify-content-center">
+              SALE</h5>
+          </div>
+
+
+          <div class="text-center flex-column">
+            <h5>Leather Gloves</h5>
+            <span class="text-muted overline">$450.00</span>
+            <span class="text-danger">$350.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-tshitr.jpg" width="100%" alt="">
+        <h5 class="mt-3">Minimal T-Shirt</h5>
+        <span class="text-danger">$15.00</span>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-plates.jpg" width="100%" alt="">
+        <h5 class="mt-3">Plates Set</h5>
+        <span class="text-danger">$30.00</span>
+      </div>
+    </div>
+
+    <!-- 3eme ligne de la boutique recents -->
+    <div class="row d-flex text-center mt-4">
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-modern-sofa.jpg" width="100%" alt="">
+        <h5 class="mt-3">Moderne Sofa</h5>
+        <span class="text-danger">$900.00</span>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-bed.jpg" width="100%" alt="">
+        <h5 class="mt-3">Bed Linen</h5>
+        <span class="text-danger">$79.00</span>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="./public/img/products_mini/product-shoes.jpg" width="100%" alt="">
+        <h5 class="mt-3">Minimal Shoes</h5>
+        <span class="text-danger">$60.00</span>
+      </div>
+    </div>
+  </section>
+  <!-- fin de la section Produits recents -->
+
+
+  <!-- 2eme Slider apres les produits recent -->
+  <div
+    class="col-lg-12 col-sm-12 col-xs-12  container-fluid text-center d-flex  flex-column align-items-center justify-content-center imageSlider mt-4"
+    style="height: 550px;">
+    <h2 class="text-white display-3 ">Discover Thousands Of Great Products</h2>
+    <br>
+    <button class="bg-danger text-white p-2 border border-0 rounded-pill p-3">LEARN MORE</button>
+  </div>
+  <!-- fin du 2eme slider -->
+
+
+
+  <!-- Debut des 3 col avant le footer -->
+
+  <div class="container-fluid my-5">
+    <div class="row d-flex justify-content-center">
+      <!-- premier COL -->
+      <div class="col-lg-3 col-sm-12 text-center p-4 bg-secondary bg-light mx-3 text-muted">
+        <i class="far fa-2x fa-check-circle my-3"></i>
+        <h5>TRSUTED BY 10,000+CUSTOMERS</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, repellat qui! Quas magni quo numquam.
+        </p>
+        <button class="text-white bg-dark border-0 p-2 borderR">LEARN MORE</button>
+      </div>
+      <!-- FIN premier COL -->
+
+      <!-- deuxième COL -->
+      <div class="col-lg-3 col-sm-12 bg-danger text-center p-4 mx-3">
+        <i class="fas fa-2x fa-location-arrow my-3 text-white"></i>
+        <h5>VERY FAST SHIPPING</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quisquam eum. Sint est eius autem.</p>
+        <button class="text-white bg-white text-dark border-0 p-2 borderR">LEARN MORE</button>
+      </div>
+
+      <!-- 3em COL -->
+      <div class="col-lg-3 col-sm-12 text-center p-4 bg-light mx-3 text-muted">
+        <i class="far fa-2x fa-check-circle my-3 "></i>
+        <h5>TRSUTED BY 10,000+ CUSTOMERS</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, in labore! Totam excepturi expedita
+          repellendus.</p>
+        <button class="text-white bg-dark border-0 p-2 borderR">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Fin des 3 COL + icons -->
+
+
+<!-- Debut footer -->
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
   <script src="./public/js/script.js"></script>
 </body>
 
