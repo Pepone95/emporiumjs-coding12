@@ -9,7 +9,7 @@ btnBlack.addEventListener("click", () => {
     titre.style.color = 'white'
     body.style.color = 'white'
 })
-// fin du du bouton Black
+//************************************************************** */
 
 
 // change le site en white
@@ -20,21 +20,22 @@ btnWhite.addEventListener("click", () => {
     body.style.color = 'black'
     titre.style.color = 'black'
 })
-// fin du bouton white
+//*************************************************************/
+
 
 
 // bouton connexion
-
-
 let btnconnexion = document.getElementById('btnconnexion');
 let connexion = document.getElementById('connexion');
 
 btnconnexion.addEventListener('click', () => {
     connexion.classList.replace('d-none', 'd-block');
 })
+//********************************************************** */
 
 
-/** *hot fashion */
+
+// Fashion
 
 let dots = document.getElementsByClassName('slide');
 carouselActive = (even) => {
@@ -63,3 +64,4 @@ for (let i = 0; i < dots.length; i++) {
         carouselActive(event.target)
     });
 }
+// ****************************************************************************

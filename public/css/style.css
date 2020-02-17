@@ -15913,10 +15913,6 @@ h1 {
 }
 #fashion .row .container .rowElements .element .prod_info .btn {
   border-radius: 50%;
-  margin-left: 15%;
-  padding: 4% 2%;
-  font-size: 0.9rem;
-  background-color: #CA5454;
 }
 #fashion .row .container .rowElements .element .prod_info .price_info {
   display: inline;
