@@ -15785,6 +15785,10 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .imgnav {
   margin-top: 50px;
   margin-bottom: 25px;
@@ -15868,6 +15872,15 @@ readers do not read off random characters that represent icons */
 
 .borderRR {
   border-radius: 5px;
+}
+
+.colorBlack {
+  background-color: #000000;
+}
+
+.BtnConnex {
+  margin-right: 380px;
+  color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */

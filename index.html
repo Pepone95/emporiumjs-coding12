@@ -11,32 +11,65 @@
 <body>
   <!-- image sur la haut de la page. -->
   <div class="imgnav">
-    <div"><img src="./public/img/logo.png" alt="">
-  </div>
+    <h1>emporium.</h1>
+    <!-- <div"><img src="./public/img/logo.png" alt=""> -->
   </div>
 
   <!-- debut NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-auto">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav align-items-center">
-        <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">PRODUCT</a>
-        <a class="nav-item nav-link" href="#">BLOG</a>
-        <a class="nav-item nav-link" href="#">ELEMENTS</a>
-        <a class="nav-item nav-link" href="#">ABOUT</a>
-        <a class="nav-item nav-link" href="#">CONTACT</a>
-        <button class="blackS border m-1 bg-dark  "></button>
-        <button class="whiteS border m-1 bg-white "></button>
-        <button class="bg-secondary border ml-1 text-light p-2">connexion</button>
+      <div class="navbar-nav align-items-center" id="navbar-navS">
+        <a class="nav-item nav-link active" href="#" id="whitE">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#" id="whitE">PRODUCT</a>
+        <a class="nav-item nav-link" href="#" id="whitE">BLOG</a>
+        <a class="nav-item nav-link" href="#" id="whitE">ELEMENTS</a>
+        <a class="nav-item nav-link" href="#" id="whitE">ABOUT</a>
+        <a class="nav-item nav-link" href="#" id="whitE">CONTACT</a>
+        <button class="blackS border m-1 bg-dark" id="btnB"> </button>
+        <button class="whiteS border m-1 bg-white" id="btnW"> </button>
+        <button class="bg-secondary border ml-1 text-light p-2" id="btnconnexion">connexion</button>
       </div>
     </div>
   </nav>
   <!-- FIN NAVBAR -->
+
+  <!-- debut du pop-up connexion -->
+  <div id="connexion" class="container d-none">
+    <div class="row my-5">
+      <div class="col-6 text-center d-flex flex-column align-items-center" style="border-right: solid;">
+        <button>
+          <h3>
+            Se connecter
+          </h3>
+        </button>
+        <input type="text" class="mb-3 mt-3" placeholder=" Email">
+        <input type="text" class="mb-3" placeholder=" Mot de passe"><br>
+        <button class="bg-success text-white" style="border: none; border-radius: 5px;">Connexion</button>
+      </div>
+      <div class="col-6 text-center d-flex flex-column align-items-center">
+        <button>
+          <h3>
+            S'inscrire
+          </h3>
+        </button>
+        <input type="text" class="mb-3 mt-3" placeholder=" Votre Nom">
+        <input type="text" class="mb-3" placeholder=" Votre prénom">
+        <input type="text" class="mb-3" placeholder=" Votre adresse mail">
+        <input type="text" class="mb-3" placeholder=" Votre mot de passe"><br>
+        <button class="bg-success text-white" style="border: none; border-radius: 5px;">Inscription</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin du bouton connexion -->
+
+
 
   <!-- Debut slider -->
   <div class="w-100 Sliderimg d-flex align-items-center mt-4">
@@ -44,17 +77,17 @@
     <div class="container my-5 ">
       <div class="row align-items-center">
 
-        <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
 
           <span class="text-danger display-4">Shop at</span>
           <br>
-          <img class="col-lg-12 col-sm-12 " src="./public/img/logo.png" alt="">
+          <img class="col-lg-12 col-sm-12" src="./public/img/logo.png" alt="">
           <p class="text-muted">A wonderful serenity has taken possession of my my entire soul, like these sweet
             morrnings of spring which l enjoy with my.</p>
           <button class="bg-danger p-3 text-white rounded-pill border border-white"><span>SALE ITEMS</span></button>
         </div>
         <div class="col text-center">
-          <img src="./public/img/slider-1.jpg" alt="" style="height: 470px">
+          <img class="col-lg-12 col-sm-12" src="./public/img/slider-1.jpg" alt="" style="height: 550px">
         </div>
       </div>
     </div>
@@ -186,6 +219,16 @@
   </div>
   <!-- fin du 2eme slider -->
 
+  <!-- Debut du CAROUSEL -->
+
+  <div class="container">
+
+  </div>
+
+
+
+
+
 
 
   <!-- Debut des 3 col avant le footer -->
@@ -226,50 +269,53 @@
   <!-- Debut footer -->
 
   <footer class="bg-dark">
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-4 col-sm-12 mt-4">
-          <h4 class="text-muted">ABOUT US</h4>
-          <p class="text-muted">A wonderful serenity has taken possession of my entire soul, like these sweet mornings
-            of spring which I
-            enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, whicch was created for
-            the bliss of</p>
-        </div>
-
-        <div class="col-lg-4 col-sm-12 mt-4">
-
-          <h4 class="text-light">RECENTS POSTS</h4>
-          <div class=" d-flex flex-column justify-content-start align-items-start p-3">
-            <button class="border-0 bg-dark  text-light border">> Hello World</button>
-            <button class="border-0 bg-dark text-light border">> Wonderful serenity has taken</button>
-            <button class="border-0 bg-dark text-light border">> In my soul and absorb its power</button>
-            <button class="border-0 bg-dark text-light border">> I hear the buzz of the little</button>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 mt-4">
+            <h4 class="text-light">ABOUT US</h4>
+            <p class="text-muted">A wonderful serenity has taken possession of my entire soul, like these sweet mornings
+              of spring which I
+              enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, whicch was created
+              for
+              the bliss of</p>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-sm-12 mt-4">
-          <h4 class="text-light">TAG CLOUD</h4>
-          <div>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">business</button>
-            <button class="bg-dark borderRR border-muted m-1 border text-muted">confidence</button>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">gadgets</button>
-            <br>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">identity</button>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">logo</button>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">photography</button>
-            <br>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">time</button>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">trips</button>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">works</button>
-            <br>
-            <button class="bg-dark borderRR border-light m-1 border text-muted">work space</button>
+          <div class="col-lg-4 col-sm-12 mt-4">
+            <div class=" d-flex flex-column justify-content-start align-items-start">
+              <h4 class="text-light">RECENTS POSTS</h4>
+              <button class="border-0 bg-dark  text-light border">> Hello World</button>
+              <button class="border-0 bg-dark text-light border">> Wonderful serenity has taken</button>
+              <button class="border-0 bg-dark text-light border">> In my soul and absorb its power</button>
+              <button class="border-0 bg-dark text-light border">> I hear the buzz of the little</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 mt-4">
+            <h4 class="text-light">TAG CLOUD</h4>
+            <div>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">business</button>
+              <button class="bg-dark borderRR border-muted m-1 border text-muted">confidence</button>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">gadgets</button>
+              <br>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">identity</button>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">logo</button>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">photography</button>
+              <br>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">time</button>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">trips</button>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">works</button>
+              <br>
+              <button class="bg-dark borderRR border-light m-1 border text-muted">work space</button>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-
-
-
+    <div class="colorBlack p-2 text-center w-100">
+      <h3 class="text-muted">COPYRIGHT 202 GOODLAYERS, ALL RIGHT RESERVED</h3>
+    </div>
 
   </footer>
 
